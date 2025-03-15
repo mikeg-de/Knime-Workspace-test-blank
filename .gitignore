@@ -11,13 +11,16 @@ Thumbs.db
 # Exclude all .log files
 **/knime.log
 
+# Exclude TEMP Folder in Root
+/ZZ_TEMP/*
+
 # Example to exclude specifc wokflow
 #**/XX - Backup Knime Workspace/
 
-#####
+###############
 # Ignore all data, only upload node settings
 # Uncomment below options
-#####
+###############
 
 # Exclude files named .savedWithData
 #.savedWithData
