@@ -3,3 +3,4 @@
 **/data/** filter=lfs diff=lfs merge=lfs -text
 **/internal/** filter=lfs diff=lfs merge=lfs -text
 **/filestore/** filter=lfs diff=lfs merge=lfs -text
+**/workflow.svg filter=lfs diff=lfs merge=lfs -text
