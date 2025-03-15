@@ -1,0 +1,5 @@
+**/TheData/** filter=lfs diff=lfs merge=lfs -text
+**/port_*/** filter=lfs diff=lfs merge=lfs -text
+**/data/** filter=lfs diff=lfs merge=lfs -text
+**/internal/** filter=lfs diff=lfs merge=lfs -text
+**/filestore/** filter=lfs diff=lfs merge=lfs -text

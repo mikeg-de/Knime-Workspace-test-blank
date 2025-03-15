@@ -1,0 +1,47 @@
+# Knime Metadata in Root
+/.metadata/
+
+# OS X
+.DS_Store
+._*
+
+# Windows
+Thumbs.db
+
+# Exclude all .log files
+**/knime.log
+
+# Example to exclude specifc wokflow
+#**/XX - Backup Knime Workspace/
+
+#####
+# Ignore all data, only upload node settings
+# Uncomment below options
+#####
+
+# Exclude files named .savedWithData
+#.savedWithData
+
+# Exclude all .zip files
+#*.zip
+
+# Exclude all .gz files
+#*.gz
+
+# Exclude files or folders that match the pattern "port_*"
+#**/port_*
+
+# Exclude any internal directories
+#**/internal/
+
+# Exclude any filestore directories
+#**/filestore/
+
+# Exclude any internalTables directories
+#**/internalTables/
+
+# Exclude the data directory
+#**/data/
+
+# Exclude test data
+#**/.artifacts/
