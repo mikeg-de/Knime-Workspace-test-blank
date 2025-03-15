@@ -1,0 +1,15 @@
+DEBUG: true
+
+AUTH_PROVIDERS:
+  - giftless.auth.allow_anon:read_write
+
+TRANSFER_ADAPTERS:
+  basic:
+    factory: giftless.transfer.basic_external:factory
+    options:
+      storage_class: giftless.storage.amazon_s3:AmazonS3Storage
+      storage_options:
+        aws_access_key_id: ${AWS_ACCESS_KEY_ID}
+        aws_secret_access_key: ${AWS_SECRET_ACCESS_KEY}
+        aws_region: ${AWS_DEFAULT_REGION}
+        bucket_name: NAME_OF_YOU_BUCKET
