@@ -1,0 +1,41 @@
+# For more details check:
+# https://medium.com/low-code-for-advanced-data-science/knime-and-python-setting-up-and-managing-conda-environments-2ac217792539
+
+# Installation
+# 1. Miniforge
+# Download and install https://conda-forge.org/download/
+#
+# 2. Start Miniforge Prompt
+# 3. Execute cmd to initiate / transfer miniconda packages
+# conda env create -f PATH_TO_CYOUR_YML/knime-python.yml
+#
+# 4. Restart system
+# 5 Start and configure Knime
+# 5.1 Set conda installation path 
+# File > Preferences > KNIME > Conda
+# Restart Knime
+#
+# 5.2 Set conda environment
+# File > Preferences > KNIME > Python
+# Change Bundled to Python and select the new environment
+# Note: Knime might take a few seconds to fetch all available environments
+
+name: knime         # Name of the created environment
+channels:
+  - conda-forge
+  - knime
+
+dependencies:
+  - python=3.11.10  # Latest compatible Python version for knime-python-base
+  - knime-python-base=5.4.0  # Latest available knime-python-base version
+  - cairo                  # SVG support
+  - pillow                 # Image processing
+  - matplotlib             # Plotting
+  - ipython                # Interactive Python shell
+  - nbformat               # Notebook support
+  - scipy                  # Scientific computing
+  - jpype1                 # Python to Java bridge
+  - jupyter                # Jupyter Notebook support
+  - pip                    # Python package manager
+  - pip:
+      - vtreat             # Additional package, not available in conda-forge
